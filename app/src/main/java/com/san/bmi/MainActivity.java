@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         edtHeightIn=findViewById(R.id.edtHeightIn);
         CalBtn = findViewById(R.id.CalBtn);
         txtResult=findViewById(R.id.TxtResult);
-
+        System.out.println("");
 
         CalBtn.setOnClickListener(new View.OnClickListener() {
             @Override
