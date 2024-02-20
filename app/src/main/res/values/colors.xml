@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+   <color name="coluwt">#FABD07</color>
+    <color name="colowt">#F8001D</color>
+    <color name="colhl">#60F404</color>
+    <color name="colob">#4C04F4</color>
+</resources>
