@@ -31,9 +31,19 @@ public class MainActivity extends AppCompatActivity {
         CalBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int wt= Integer.parseInt(edtWeight.getText().toString());
-                int ft= Integer.parseInt(edtHeightFt.getText().toString());
-                int in= Integer.parseInt(edtHeightIn.getText().toString());
+                String weightStr = edtWeight.getText().toString();
+                String heightFtStr = edtHeightFt.getText().toString();
+                String heightInStr = edtHeightIn.getText().toString();
+
+                if (weightStr.isEmpty() || heightFtStr.isEmpty() || heightInStr.isEmpty()) {
+                    // Show a message indicating that all fields are required
+                    txtResult.setText("Please fill in all fields");
+                    return; // Exit the onClick method as validation failed
+                }
+
+                int wt = Integer.parseInt(weightStr);
+                int ft = Integer.parseInt(heightFtStr);
+                int in = Integer.parseInt(heightInStr);
 
                 int totalIn=ft *12 +in;
                 double SquaredIn= totalIn*totalIn;
