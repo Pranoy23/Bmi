@@ -45,6 +45,16 @@ public class MainActivity extends AppCompatActivity {
                 int ft = Integer.parseInt(heightFtStr);
                 int in = Integer.parseInt(heightInStr);
 
+                if (wt < 4) {
+                    txtResult.setText("Minimum weight should be 4 pounds");
+                    return;
+                }
+
+                if (ft  < 1) {
+                    txtResult.setText("Minimum height should be 1 ft");
+                    return;
+                }
+
                 int totalIn=ft *12 +in;
                 double SquaredIn= totalIn*totalIn;
                 double bmi= (wt/SquaredIn)*703;
