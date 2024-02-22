@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -37,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
 
                 if (weightStr.isEmpty() || heightFtStr.isEmpty() || heightInStr.isEmpty()) {
                     // Show a message indicating that all fields are required
-                    txtResult.setText("Please fill in all fields");
+                    txtResult.setText(R.string.please_fill);
+
                     return; // Exit the onClick method as validation failed
                 }
 
@@ -49,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
                     txtResult.setText("Minimum weight should be 4 pounds");
                     return;
                 }
-
                 if (ft  < 1) {
                     txtResult.setText("Minimum height should be 1 ft");
                     return;
