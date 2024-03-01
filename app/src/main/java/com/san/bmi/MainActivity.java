@@ -53,7 +53,10 @@ public class MainActivity extends AppCompatActivity {
                     txtResult.setText("Minimum height should be 1 ft");
                     return;
                 }
-
+                if (in  > 11) {
+                    txtResult.setText("Maximum height should be 11 inch");
+                    return;
+                }
                 int totalIn=ft *12 +in;
                 double SquaredIn= totalIn*totalIn;
                 double bmi= (wt/SquaredIn)*703;

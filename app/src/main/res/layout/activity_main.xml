@@ -40,6 +40,7 @@
             android:ems="10"
             android:hint="@string/hint_wt"
             android:inputType="number"
+            android:maxLength="4"
             android:layout_marginBottom="16dp"/>
 
         <!-- Height Ft EditText -->
@@ -51,6 +52,7 @@
             android:ems="10"
             android:hint="@string/hint_htF"
             android:inputType="number"
+            android:maxLength="2"
             android:layout_marginBottom="16dp"/>
 
         <!-- Height In EditText -->
@@ -62,6 +64,7 @@
             android:ems="10"
             android:hint="@string/hint_htI"
             android:inputType="number"
+            android:maxLength="2"
             android:layout_marginBottom="16dp"/>
 
         <!-- Calculate Button -->
